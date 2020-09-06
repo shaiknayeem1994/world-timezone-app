@@ -12,6 +12,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:request-config>
 	<flow name="world-demo-apiFlow" doc:id="a2157a8e-5eba-4e06-8c7a-afece2bbefbe" >
 		<http:listener doc:name="Listener" doc:id="858fb7f8-ad41-404b-8834-a04e5a073f3a" config-ref="HTTP_Listener_config" path="/flow"/>
-		<logger level="INFO" doc:name="Logger" doc:id="371abbfb-23bc-4cbe-92c2-662b53ced642" message="flow is executed successfully"/>
+		<logger level="INFO" doc:name="Logger" doc:id="371abbfb-23bc-4cbe-92c2-662b53ced642" message="flow is executed successfully ++++++++++++"/>
 	</flow>
 </mule>
