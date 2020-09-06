@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="767f1a74-b605-438f-b03f-e678798c144b" basePath="/timezone">
+		<http:listener-connection host="0.0.0.0" port="8082" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="70f9c7dd-b978-4e09-8ee9-7376b51155cb" basePath="/api/timezone">
+		<http:request-connection host="worldtimeapi.org" />
+	</http:request-config>
+	<flow name="world-demo-apiFlow" doc:id="a2157a8e-5eba-4e06-8c7a-afece2bbefbe" >
+		<http:listener doc:name="Listener" doc:id="858fb7f8-ad41-404b-8834-a04e5a073f3a" config-ref="HTTP_Listener_config" path="/flow"/>
+		<logger level="INFO" doc:name="Logger" doc:id="371abbfb-23bc-4cbe-92c2-662b53ced642" message="flow is executed successfully"/>
+	</flow>
+</mule>
