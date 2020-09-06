@@ -42,8 +42,6 @@
 				<password>#Mule#1994@</password>
 				<muleVersion>4.3.0</muleVersion>
 				</cloudHubDeployment>
-				
-				
 				</configuration>
 			</plugin>
 		</plugins>
