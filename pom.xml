@@ -38,7 +38,7 @@
 				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
-				<applicationName>world-demo-api123</applicationName>
+				<applicationName>world-demo-api1234</applicationName>
 				<password>#Mule#1994@</password>
 				<muleVersion>4.3.0</muleVersion>
 				<objectStoreV2>true</objectStoreV2>
