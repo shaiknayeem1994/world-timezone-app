@@ -34,7 +34,7 @@
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
-				<username>snayeem123</username>
+				<username>snayeem</username>
 				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
@@ -43,6 +43,7 @@
 				<muleVersion>4.3.0</muleVersion>
 				</cloudHubDeployment>
 				</configuration>
+				
 			</plugin>
 		</plugins>
 	</build>
