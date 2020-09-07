@@ -43,6 +43,7 @@
 				<muleVersion>4.3.0</muleVersion>
 				</cloudHubDeployment>
 				</configuration>
+				
 			</plugin>
 		</plugins>
 	</build>
