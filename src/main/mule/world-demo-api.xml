@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<http:listener-connection host="0.0.0.0" port="8082" />
 	</http:listener-config>
 	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="351874f5-ad5c-487a-909c-e74681b616df" basePath="/api" >
-		<http:request-connection host="worldtimeapi.org" protocol="HTTPS"/>
+		<http:request-connection host="worldtimeapi.org"/>
 	</http:request-config>
 	<flow name="world-demo-apiFlow" doc:id="a2157a8e-5eba-4e06-8c7a-afece2bbefbe" >
 		<http:listener doc:name="Listener" doc:id="858fb7f8-ad41-404b-8834-a04e5a073f3a" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
