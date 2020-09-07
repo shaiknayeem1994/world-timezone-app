@@ -41,6 +41,7 @@
 				<applicationName>world-demo-api123</applicationName>
 				<password>#Mule#1994@</password>
 				<muleVersion>4.3.0</muleVersion>
+				<objectStoreV2>true</objectStoreV2>
 				</cloudHubDeployment>
 				</configuration>
 				
